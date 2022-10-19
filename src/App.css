@@ -47,6 +47,36 @@
   width: 100%;
 }
 
+.features-button {
+  font-size: medium;
+  padding: 5px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border-style:none;
+}
+
+.features-button.time{
+  color: white;
+  background-color: grey;
+}
+
+.features-button.heart-rate{
+  color: black;
+  background-color: rgb(201, 195, 195);
+}
+
+.buy-now-button {
+  font-size: medium;
+  font-weight: bold;
+  margin: 20px 10px;
+  padding: 10px 40px;
+  display: block;
+  color: white;
+  background: rgb(70, 142, 236);
+  border-style: none;
+  border-radius: 5px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -50,6 +50,10 @@ class FitBit19 extends React.Component {
                     <div>
                         {watchColors}
                     </div>
+                    <h3>Features</h3>
+                    <button className="features-button time">Time</button>
+                    <button className="features-button heart-rate">Heart Rate</button>
+                    <button className="buy-now-button">Buy Now</button>
                 </div>
             </div>
             )
