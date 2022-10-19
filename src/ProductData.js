@@ -33,15 +33,23 @@ class FitBit19 extends React.Component {
     }
 
     render(){
+
+        const watchColors = ProductData.colorOptions.map(
+            (watch, pos) => { return (<img src={watch.imageUrl} alt="Watch Face" width="15%" key={pos}/>)}
+        )
+
         return(
             <div className="Product-page">
                 <div className="Product-image">
                     <img src={ProductData.colorOptions[1].imageUrl} className="main-product-image" alt="Fitbit Wristwatch"/>
                 </div>
                 <div className="Product-details">
-                    <h2>{ProductData.title}</h2>
+                    <h1>{ProductData.title}</h1>
                     <p>{ProductData.description}</p>
-                    <h4>Select Color</h4>
+                    <h3>Select Color</h3>
+                    <div>
+                        {watchColors}
+                    </div>
                 </div>
             </div>
             )
