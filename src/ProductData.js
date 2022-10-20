@@ -1,5 +1,7 @@
 import React from "react";
 
+const today = new Date();
+
 const ProductData = {
     title: 'FitBit 19 - The Smartest Watch',
     description: 'Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.',
@@ -29,19 +31,25 @@ const ProductData = {
 class FitBit19 extends React.Component {
 
     state = {
-        
+        watchColor: 0
+    }
+
+    changeColor = (pos) => {
+        this.setState(
+            {watchColor:pos}
+        );
     }
 
     render(){
 
         const watchColors = ProductData.colorOptions.map(
-            (watch, pos) => { return (<img src={watch.imageUrl} alt="Watch Face" width="15%" key={pos}/>)}
+            (watch, pos) => { return (<img src={watch.imageUrl} alt="Watch Face" onClick={ () => {this.changeColor(pos)}} width="15%" key={pos}/>)}
         )
 
         return(
             <div className="Product-page">
                 <div className="Product-image">
-                    <img src={ProductData.colorOptions[1].imageUrl} className="main-product-image" alt="Fitbit Wristwatch"/>
+                    <img src={ProductData.colorOptions[this.state.watchColor].imageUrl} className="main-product-image" alt="Fitbit Wristwatch"/>
                 </div>
                 <div className="Product-details">
                     <h1>{ProductData.title}</h1>
