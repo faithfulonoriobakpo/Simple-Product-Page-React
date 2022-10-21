@@ -67,7 +67,7 @@ class FitBit19 extends React.Component {
                     <h1>{ProductData.title}</h1>
                     <p>{ProductData.description}</p>
                     <h3>Select Color</h3>
-                    <div>
+                    <div className="watchColors">
                         {watchColors}
                     </div>
                     <h3>Features</h3>

@@ -89,6 +89,10 @@
   transform: translate(-50%,-50%);
 }
 
+.watchColors {
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
