@@ -34,6 +34,7 @@
 }
 
 .Product-image {
+  position: relative;
   flex: 50%;
   margin: auto;
 }
@@ -53,6 +54,7 @@
   margin: 0 5px;
   border-radius: 5px;
   border-style:none;
+  cursor: pointer;
 }
 
 .features-button.time{
@@ -75,6 +77,16 @@
   background: rgb(70, 142, 236);
   border-style: none;
   border-radius: 5px;
+}
+
+.watchFace {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 @keyframes App-logo-spin {
